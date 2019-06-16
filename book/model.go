@@ -1,15 +1,19 @@
 package book
 
-import "gopkg.in/mgo.v2/bson"
+import (
+	
+	"gopkg.in/mgo.v2/bson"
+	"time"
+)
 
-//Books represents a single book
-type Books struct {
-	Book struct {
-		Author  string `json:"author"`
+//Book represents a single book
+type Book struct {
+		ID bson.ObjectId	`bson:"_id"`	
+		Author  string 		`json:"author"`
 		Current struct {
-			Edition  time.Time `json:"edition"`
-			Location string    `json:"location"`
-			Owner    string    `json:"owner"`
+			Edition  time.Time	`json:"edition"`
+			Location string		`json:"location"`
+			Owner    string		`json:"owner"`
 		} `json:"current"`
 		Details struct {
 			Categories []string `json:"categories"`
@@ -27,8 +31,6 @@ type Books struct {
 			Sold    bool `json:"sold"`
 		} `json:"status"`
 		Title string `json:"title"`
-	} `json:"book"`
-}
-
+	} 
 //Books is an array of book
 type Books []Book

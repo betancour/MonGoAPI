@@ -3,8 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
-
-	"/book/"
+	"/logger"
 
 	"github.com/gorilla/handlers"
 )

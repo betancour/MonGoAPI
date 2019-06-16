@@ -3,7 +3,7 @@ package book
 import (
 	"net/http"
 
-	"/logger/"
+	"../logger"
 
 	"github.com/gorilla/mux"
 )
