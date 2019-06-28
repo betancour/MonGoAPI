@@ -25,25 +25,25 @@ var routes = Routes{
 	Route{
 		"Index",
 		"GET",
-		"/",
+		"/book",
 		controller.Index,
 	},
 	Route{
 		"AddBook",
 		"POST",
-		"/",
+		"/book",
 		controller.AddBook,
 	},
 	Route{
 		"UpdateBook",
 		"PUT",
-		"/",
+		"/book",
 		controller.UpdateBook,
 	},
 	Route{
 		"DeleteBook",
 		"DELETE",
-		"/",
+		"/book",
 		controller.DeleteBook,
 	},
 }
