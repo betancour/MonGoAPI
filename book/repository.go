@@ -37,7 +37,7 @@ func (r Repository) GetBooks() Books {
 	return results
 }
 
-// AddBook inserts an Book in the DB
+// AddBook inserts a Book in the DB
 func (r Repository) AddBook(book Book) bool {
 	session, err := mgo.Dial(SERVER)
 	defer session.Close()
@@ -52,7 +52,7 @@ func (r Repository) AddBook(book Book) bool {
 	return true
 }
 
-// UpdateBook updates an Book in the DB
+// UpdateBook updates a Book in the DB
 func (r Repository) UpdateBook(book Book) bool {
 	session, err := mgo.Dial(SERVER)
 	defer session.Close()
@@ -67,7 +67,7 @@ func (r Repository) UpdateBook(book Book) bool {
 	return true
 }
 
-// DeleteBook deletes an Book
+// DeleteBook deletes a Book
 func (r Repository) DeleteBook(id string) string {
 	session, err := mgo.Dial(SERVER)
 	defer session.Close()
@@ -80,7 +80,7 @@ func (r Repository) DeleteBook(id string) string {
 	// Grab id
 	oid := bson.ObjectIdHex(id)
 
-	// Remove user
+	// Remove book
 	if err = session.DB(DBNAME).C(DOCNAME).RemoveId(oid); err != nil {
 		log.Fatal(err)
 		return "500"
