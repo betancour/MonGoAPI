@@ -1,0 +1,32 @@
+{
+  "editor.fontSize": 18,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+    "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "editor.quickSuggestions": true,
+    "editor.wordWrapColumn": 79
+  },
+  "terminal.integrated.fontSize": 14,
+  "workbench.iconTheme": "material-icon-theme",
+  "[json]": {
+    "editor.defaultFormatter": "remimarsal.prettier-now"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+  },
+  "prettier.statusBar": true,
+  "update.mode": "none",
+  "workbench.colorTheme": "Dracula",
+}
