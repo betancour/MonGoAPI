@@ -7,7 +7,6 @@ import (
 	"log"
 	"net/http"
 	"strings"
-
 	"github.com/gorilla/mux"
 )
 
